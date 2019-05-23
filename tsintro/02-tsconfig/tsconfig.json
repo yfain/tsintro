@@ -3,6 +3,10 @@
       "baseUrl": "src",   
       "outDir": "./dist", 
       "noEmitOnError": true, 
-      "target": "es5" 
+      "target": "es6" 
   }
 }
+
+
+
+
