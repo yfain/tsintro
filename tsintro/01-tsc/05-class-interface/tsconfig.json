@@ -1,0 +1,12 @@
+{
+  "compilerOptions": {
+      "baseUrl": "src",   
+      "outDir": "./dist", 
+      "noEmitOnError": true, 
+      "target": "es6" 
+  }
+}
+
+
+
+
