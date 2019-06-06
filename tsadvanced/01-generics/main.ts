@@ -6,7 +6,7 @@ class Employee extends Person {
     department: number;
 }
 
-class Animal {  
+class Animal { 
     breed: string;
 }
 
