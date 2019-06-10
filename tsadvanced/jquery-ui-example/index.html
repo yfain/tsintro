@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>jQuery UI Example</title>
+  
+  <link rel="stylesheet" href="//code.jquery.com/ui/1.12.1/themes/base/jquery-ui.css">
+  <script src="//code.jquery.com/jquery-3.3.1.min.js"></script>
+  <script src="//code.jquery.com/ui/1.12.1/jquery-ui.min.js"></script>
+
+  <style>
+    body {
+      margin: 32px;
+    }
+
+    * {
+      box-sizing: border-box;
+    }
+
+    #shapes {
+      display: flex;
+      margin-bottom: 16px;
+    }
+
+    #shapes > *:not(:last-child) {
+      margin-right: 32px;
+    }
+    
+    @media (max-width: 640px) {
+      #shapes {
+        flex-direction: column;
+        align-items: center;
+      }
+
+      #shapes > *:not(:last-child) {
+        margin-bottom: 16px;
+        margin-right: 0;
+      }
+    }
+
+    #rectangle {
+      background-color: blue;
+      height: 100px;
+      width: 150px;
+    }
+
+    #circle {
+      background-color: green;
+      border-radius: 50%;
+      height: 100px;
+      width: 100px;
+    }
+
+    #triangle {
+      color: green;
+      height: 100px;
+      width: 150px;
+    }
+
+    #selector {
+      min-width: 220px;
+    }
+
+    #error {
+      color: red;
+    }
+    
+    #info {
+      color: blue;
+    }
+  </style>
+</head>
+<body>
+  <div id="shapes">
+    <div id="rectangle" class="blue" hasAngles></div>
+
+    <div id="circle" class="green"></div>
+
+    <div id="triangle" class="green" hasAngles>
+      <svg viewBox="0 0 150 100">
+        <polygon points="75, 0, 150, 100, 0, 100" fill="currentColor"/>
+      </svg>
+    </div>
+  </div>
+
+  <div class="ui-widget">
+    <label for="selector">Selector:</label>
+    <input id="selector" placeholder="Enter a valid CSS selector">
+    <span id="error"></span>
+    <span id="info"></span>
+  </div>
+
+  <script src="dist/index.js"></script>
+</body>
+</html>
