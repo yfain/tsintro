@@ -1,6 +1,5 @@
 {
-  "compilerOptions": {
-      "baseUrl": "src",   
+  "compilerOptions": {   
       "outDir": "./dist", 
       "noEmitOnError": true, 
       "target": "es6" 
