@@ -13,8 +13,7 @@ function useSalutation(salutation: string) {
     }
   }
 
-  // The undecorated class
-@useSalutation("Mr. ")  
+  // The undecorated class 
 class Greeter {
     constructor(public name: string) { }
     sayHello() { console.log(`Hello ${this.name} `) };
@@ -25,6 +24,3 @@ class Greeter {
 // 3. Add a line that invokes sayHello()
 // 4. Compile and run the script main. You'll need to use the --experimentalDecorators flag 
 // 5. It should print "Hello  Mr. Smith"
-
-const grt = new Greeter("Smith ");
-grt.sayHello();
